@@ -1,0 +1,13 @@
+# Most scripts use the Python standard library only, by design, so that they
+# run in a bare container. These are needed by specific scripts:
+#
+#   numpy       -> 03, 06, aux_osmoadaptation_profile
+#   MDAnalysis  -> 05
+#   matplotlib  -> aux_osmoadaptation_profile, only with --figure
+#
+# Not installable with pip, must be on PATH:
+#   HMMER (hmmsearch)  -> 01
+
+numpy>=1.21
+MDAnalysis>=2.4
+matplotlib>=3.5
